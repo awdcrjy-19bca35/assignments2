@@ -1,3 +1,4 @@
+// java program https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-2/practice-problems/algorithm/sum-of-primes-7/ // date: 27 july 2021
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
