@@ -1,0 +1,47 @@
+import java.util.*;
+public class Main
+{
+public static void main(String args[]){
+int n;
+System.out.println("Enter array size and elements:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+{
+arr[i]=sc.nextInt();
+}
+int prefix[]=new int[n];
+prefix[0]=arr[0];
+for(int i=1;i<n;i++)
+{
+prefix[i]=prefix[i-1]+arr[i];
+}
+System.out.println("Enter l and r values :");
+int l,r;
+l=sc.nextInt();
+r=sc.nextInt();
+System.out.println("Sum of elements within given range: ");
+if(l==0)
+System.out.println(prefix[r]);
+else
+System.out.println(prefix[r]-prefix[l-1]);
+}
+}
+-------------------------------------------------------------
+Enter array size and elements:
+
+5
+
+1 2 3 50 60
+
+Enter l and r values :
+
+0 3
+
+Sum of elements within given range: 
+
+56
+
+
+
