@@ -25,11 +25,12 @@ Enter value:
 
 Factorial of 4 is: 24
 -----------------------
-  Enter value: 
+Enter value: 
 
-13
+9
 
-Factorial of 13 is: 1932053504
+Factorial of 9 is: 362880
+
 
 
 
