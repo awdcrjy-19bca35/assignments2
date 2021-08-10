@@ -1,3 +1,4 @@
+// java program to perform binary search using recursion // date: 9 aug 2021
 import  java.util.*;
 public class Main
 {   
@@ -22,7 +23,7 @@ public class Main
 	    int mid=(l+h)/2;
 	    if(ar[mid]==e) return mid;
 	    if(l>h) return -1;
-	    if(e>ar[mid]) return BinarySearch(ar,e,mid+1,h);  //BINARY SEARCH USING RECURSION
+	    if(e>ar[mid]) return BinarySearch(ar,e,mid+1,h);  
 	     return BinarySearch(ar,e,l,mid-1);
 	    
 	}
