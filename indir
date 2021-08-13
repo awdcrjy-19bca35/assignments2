@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+    static int lengthofstr(String str)
+    {
+        if (str.equals(" "))
+            return 0;
+        else
+            return lengthofstr(str.substring(1)) + 1;
+    }
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner (System.in);
+      System.out.println("Enter String");
+      String str=sc.nextLine();
+      int len=lengthofstr(str);
+      System.out.println(len);
+    }
+}
